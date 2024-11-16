@@ -17,7 +17,11 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode',  # Optional, for source links
 ]
+
+# Automatically generate stub pages for autosummary directives
+autosummary_generate = True
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
